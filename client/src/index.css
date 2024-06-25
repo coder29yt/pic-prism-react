@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+/* Always link your fonts above these 3 lines of tailwind css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Below this three lines you can add your custom css if necessary */
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
