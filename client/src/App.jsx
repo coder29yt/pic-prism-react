@@ -18,6 +18,7 @@ export default function App() {
           <Route path="/seller/profile" element={<SellerDashboard />} />
           <Route path="/buyer/profile" element={<BuyerDashboard />} />
         </Routes>
+        {/* Add your footer here */}
       </BrowserRouter>
     </>
   );
