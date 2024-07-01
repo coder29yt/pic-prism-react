@@ -5,7 +5,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const { readdirSync } = require("fs");
 const { connectDb } = require("./connection");
-
+const cors = require("cors");
 // import the route here
 // const authRoute = require("./routes/authRoutes");
 
@@ -16,8 +16,10 @@ const app = express();
 // port define karna hoga - Port hota hai darwaja
 const port = process.env.PORT || 5000;
 
-connectDb()
+connectDb();
 // Making routes
+app.use(cors());
+app.use(express.json());
 app.get("/", (req, res) => {
   res.send("<center><h1>Server Running Dudes...</h1></center>");
 });

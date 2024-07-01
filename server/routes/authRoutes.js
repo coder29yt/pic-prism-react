@@ -7,7 +7,7 @@ const { login, signup } = require("../controllers/authController");
 // Ye hai mentos zindagi
 const router = require("express").Router();
 
-router.post("/login", login);
 router.post("/signup", signup);
+router.post("/login", login);
 
 module.exports = router;
