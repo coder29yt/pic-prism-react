@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ramonak/react-progress-bar": "^5.2.0",
     "@reduxjs/toolkit": "^2.2.6",
     "axios": "^1.7.2",
     "gsap": "^3.12.5",
