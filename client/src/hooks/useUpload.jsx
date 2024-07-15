@@ -22,7 +22,9 @@ const useUpload = async ({ image, onUploadProgress }) => {
       const res = await axios.post(
         `https://api.cloudinary.com/v1_1/${
           import.meta.env.VITE_CLOUDINARY_CLOUD_NAME
-        }/image/upload`
+        }/image/upload`,
+        formData,
+        config
       );
 
       const data = await res.data;

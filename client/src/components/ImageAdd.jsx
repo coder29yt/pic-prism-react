@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import useUpload from "../../hooks/useUpload";
+import useUpload from "../hooks/useUpload";
 import axios from "axios";
 import { useSelector } from "react-redux";
 import ProgressBar from "@ramonak/react-progress-bar";
@@ -42,7 +42,7 @@ const ImageAdd = () => {
           title,
           price,
           image: secure_url,
-          public_id: public_id,
+          publicId: public_id,
           author,
         },
         {
@@ -60,6 +60,7 @@ const ImageAdd = () => {
         setProgress(0);
       }
     } catch (error) {
+      console.log(error);
       return toast.error(error.response.data.message);
     }
   };
