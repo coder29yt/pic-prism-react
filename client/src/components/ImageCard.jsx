@@ -1,7 +1,7 @@
 const ImageCard = ({ id, img, title, price, author, icon1, icon2 }) => {
   return (
-    <div className="rounded-lg bg-white shadow-lg p-2">
-      <div className="w-full h-[200px] overflow-hidden rounded-2xl">
+    <div className="rounded-lg bg-white shadow-lg p-2 h-fit">
+      <div className="w-[300px] h-[200px] overflow-hidden rounded-2xl">
         <img
           src={img}
           alt={title}

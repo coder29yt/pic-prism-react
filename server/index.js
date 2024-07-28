@@ -18,7 +18,12 @@ const port = process.env.PORT || 5000;
 
 connectDb();
 // Making routes
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.get("/", (req, res) => {
   res.send("<center><h1>Server Running Dudes...</h1></center>");
